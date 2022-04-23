@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Job Search</title>
+    </head>
+
+
+    <body>
+        <img src="https://townsquare.media/site/88/files/2020/06/C_Charlotte_RGB_7484.jpg?w=1784&q=75"  width="400" height="400">
+        <br>
+        <br>
+        <span style="background-color: forestgreen; font-size: 30pt; font-weight:bold; font-family:'Times New Roman'">Job Details</span>
+        
+
+        {% for value in responseJSON %}
+        <br>
+        <br>
+        <span style=" font-size: 20pt; font-weight:bold; font-family:'Times New Roman'">Title:</span>
+        <span style=" font-size: 18pt; font-family:'Times New Roman'">{{value.Title}}</span>  
+        <br>
+        <span style=" font-size: 20pt; font-weight:bold; font-family:'Times New Roman'">Company:</span>
+        <span style=" font-size: 18pt; font-family:'Times New Roman'"> {{value.Company}}</span>   
+        <br>
+        <span style=" font-size: 20pt; font-weight:bold; font-family:'Times New Roman'">Description:</span>
+        <span style=" font-size: 18pt; font-family:'Times New Roman'">{{value.Description}}</span>   
+        <br>
+        <span style=" font-size: 20pt; font-weight:bold; font-family:'Times New Roman'">Salary:</span>
+        <span style=" font-size: 18pt; font-family:'Times New Roman'">{{value.Salary}}</span>   
+        <br>
+        {% endfor %}
+    
+      
+    </body>
+
+
+</htmlo
